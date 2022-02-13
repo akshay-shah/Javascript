@@ -1,15 +1,19 @@
 function fizzBuzz() {
-  for (let index = 1; index <= 100; index++) {
+  var index = 1;
+  var array = [];
+  while (index <= 100) {
     if (index % 3 === 0 && index % 5 === 0) {
-      console.log("FizzBuzz");
+      array.push("FizzBuzz");
     } else if (index % 5 === 0) {
-      console.log("Buzz");
+      array.push("Buzz");
     } else if (index % 3 === 0) {
-      console.log("Fizz");
+      array.push("Fizz");
     } else {
-      console.log(index);
+      array.push(index);
     }
+    index++;
   }
+  console.log(array);
 }
 
 fizzBuzz();
